@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>CALCULADORA DE CONVERSIONES</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
+  </head>
+  <body>
+  <center>
+      <h3>CONVERSION GALONES A LITROS</h3>
+      <input type="number" min="1" value="1" name="galons" id="gal">
+      <button id="button-convert" onclick="GalonLitro(document.getElementById('gal').value);">Convertir</button>
+      <span id="galons-span"></span>
+
+
+
+
+      <h3>CONVERSION GRADOS</h3>
+      <select id="select-grades">
+        <option selected value="o1">ºC a ºF</option>
+        <option value="o2">ºC a ºK</option>
+        <option value="o3">ºK a ºC</option>
+        <option value="o4">ºF a ºK</option>
+        <option value="o5">ºF a ºC</option>
+        <option value="o6">ºK a ºF</option>
+      </select>
+      <input type="number" min="1" value="1" name="grades" id="grades-button"><br>
+
+      <button id="button-grades" onclick="CalcuGrados(document.getElementById('grades-button').value);">Convertir</button>
+      <span id="grades-span"></span>
+
+
+
+
+
+      <h3>PESO EN LA LUNA </h3>
+      <label>Por favor digite  su peso:</lablel>
+      <input type="number" min="1" value="1" name="weigth" id="Peso">
+      <button id="button-gravity" onclick="Gravedad(document.getElementById('Peso').value);">Calcular</button>
+      <span id="gravity-span"></span>
+  </center>
+
+    <script type="text/javascript" src="js/Script.js"></script>
+
+  </body>
+</html>
